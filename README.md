@@ -4,6 +4,7 @@ This is a project made for the Solving for India hackathon organized by Geeks fo
 The project was designed from scratch using figma - https://www.figma.com/file/aZYB1VBNW9iPLMBiu4HW4f/Untitled?node-id=41%3A1174&t=d0940pwBSMx7RVbN-1  
 The backend makes use of a headless CMS called strapi this was done to ensure that the project is easy to modify and self host, it has been deployed to a google cloud AMD instance using a docker image and nginx  
 The frontend is coded in react and it is a Progressive Web Application so it can also be downloaded as a desktop application.  
+You can find the demo vide here https://youtu.be/DZgPjxrcO0w  
 ## About
 DocConnect is an all-in-one application designed specifically for doctors, providing them with the tools and features they need to manage their patients, appointments, and documents in a seamless and efficient manner. With its patient and appointment management system, doctors can easily schedule and manage their appointments with ease, helping to streamline their workflow and save time.  
   
