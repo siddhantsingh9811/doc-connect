@@ -1,0 +1,123 @@
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.main{
+    overflow: hidden;
+}
+.book h1{
+    margin-top: 20px;
+}
+.book h2{
+    color: var(--alt);
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.book .image {
+    width: 100vw;
+    margin-top: 5vh;
+    z-index: 10;
+}
+.book .content{
+    z-index: 100;
+    min-height: 40vh;
+    background-color: var(--white);
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    
+    box-shadow: 0px 25px 39px 8px rgba(0, 0, 0, 0.18);
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+.book .content h1{
+    color: var(--blue);
+    font-weight: 500;
+}
+.book .content .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    
+}
+.book .content .top2{
+    padding-left: 20px;
+}
+.book .content .bt{
+    font-size: 1.5em;
+    background-color: var(--blue);
+    color:var(--white);
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+.book .content .box{
+    border-radius: 16px;
+    width: 80vw;
+    background-color: var(--white);
+    box-shadow: 0px 0px 46px -8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.book .content .form{
+    padding: 40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+
+.book .content .form .t{
+    color:var(--blue);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.book .content .form input{
+    border: 2px solid var(--blue);
+    font-size: 0.9em;
+    padding: 8px;
+    border-radius: 10px;
+}
+.book .content .form .timing input{
+    border: none;
+    width: fit-content;
+}
+.book .content .form .timing input{
+    
+    display: none;
+}
+.book .content .form .timing .s{
+    display: flex;
+}
+.book .content .form .timing .react-dropdown-select {
+    width: 100px;
+    color: var(--alt);
+}
+.book .content .form .f .r{
+    width: 100%;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.css-wmy1p7-ReactDropdownSelect{
+    border: 2px solid var(--blue)!important;
+}

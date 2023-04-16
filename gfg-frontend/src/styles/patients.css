@@ -1,0 +1,287 @@
+.patients {
+    height: 100vw;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.patients .sidebar1{
+    width: 31vw;
+    height: 100vh;
+    background-color: var(--white);
+    justify-self: flex-end;
+    overflow-y: scroll;
+}
+.sidebar1::-webkit-scrollbar {
+    width: 12px;
+    transform: translateX(10px);
+}
+
+.sidebar1::-webkit-scrollbar-track {
+    background-color: var(--white);
+    transform: translateX(10px);
+    border-radius: 10px;
+}
+
+.sidebar1::-webkit-scrollbar-thumb {
+    transform: translateX(10px);
+    border-radius: 10px;
+    background-color: var(--blue); 
+}
+.patients .content .top{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.patients .content .top .t1{
+    display: flex;
+    justify-content: center;
+}
+.patients .content .top .t1 .filter{
+    margin-top: 35px;
+    font-size: 1.8em;
+    color:var(--blue);
+    background-color: var(--white);
+    padding-left: 15px;
+    padding-right: 15px;    
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--blue);
+    border-radius: 38px;
+    margin-left: 20px;
+}
+.patients .content .top .t1 .filter .image{
+    margin-left: 15px;
+}
+.patients .content .top .search{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.7em;
+    color:var(--blue);
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    box-shadow: 0px 4px 25px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 24.5px;
+    padding: 5px;
+    padding-left: 20px;
+}
+.patients .table1{
+    height: 80vh;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.patients .table1 table{
+    width: 42vw;
+    cursor: pointer;
+}
+
+.patients .table1 .active td{
+    background-color: var(--blue);
+    color: white;
+    
+}
+.patients .table1 .active td #blue{
+    color: black;
+}
+
+.patient{
+    padding-left: 3vw;
+
+}
+.patient h2{
+    font-size: 2.25em;
+    font-weight: 300;
+}
+.patient .top{
+    display: flex;
+    justify-content: space-between;
+}
+.patient .top .text{
+    margin-right: 10px;
+}
+.patient .top .bt{
+    background-color: var(--blue);
+    width: fit-content;
+    display: flex;
+    color: var(--white);
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 23px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.patients .box{
+    box-shadow: 0px 4px 27px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    width: fit-content;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    border: 2px solid var(--blue);
+    margin-right: 30px;
+    width: inherit;
+}
+.patients .box .l .r{
+    font-size: 0.9em;
+}
+.patients .l{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 5px;
+    color: var(--alt);
+}
+.patient .e h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2.125em;
+    color: var(--alt);
+}
+.patient .box .bt{
+    background-color: var(--blue);
+    width: fit-content;
+    display: flex;
+    color: var(--white);
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 23px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+.weekly .card{
+    background-color: var(--white);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding:20px;
+    box-shadow: 0px 4px 17px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 110px;
+    margin-top: 15px;
+}
+.weekly .cards{
+    display: flex;
+    align-items: center;
+}
+.weekly .card .title{
+    color: var(--alt);
+}
+.weekly .card .data{
+    border-radius: 15px;
+    background-color: var(--blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-left: 20px solid var(--blue);
+    border-right: 20px solid var(--blue);
+    transform: translateY(33%);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.weekly .data2{
+    border-radius: 15px;
+    background-color: var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-left: 20px solid var(--white);
+    border-right: 20px solid var(--white);
+    transform: translateY(33%);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.patient .cards .box {
+    display: flex;
+    align-items: center;
+}
+.patient .cards .box .l{
+    font-size: 1.4em;
+}
+.patient .card .button{
+    color: white;
+    background-color: var(--blue);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    position: absolute;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.sp h1{
+    font-weight: 500;
+    font-size: 2.3em;
+}
+.patient .documents{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 65px -28px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    height: 22vh;
+    margin-right: 35px;
+}
+.sp .table1 table{
+    width: 40vw;
+}
+.sp .table1{
+    height: 35vh;
+    width: 40vw;
+}
+.sp .table1 .sum{
+    font-size: 0.7em;
+    color: var(--alt);
+    width: 10vw;
+}
+.sp .top .button{
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    font-size: 1.3em;
+    margin-top: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    height: fit-content;
+    font-weight: 300;
+}
+.sp .top .button svg{
+    margin-right: 10px;
+    transform: scale(0.9);
+}
+.patients .sidebar1 .spd{
+    padding-left: 3vw;
+
+} 
+
+.patients .spd h1{
+    font-size: 2.25em;
+    font-weight: 400;
+}
+.patients .view2 .h{
+    font-weight: 500;
+    font-size: 2.3em;
+    color: var(--alt);
+}

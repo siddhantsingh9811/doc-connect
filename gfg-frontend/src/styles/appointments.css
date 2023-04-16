@@ -1,0 +1,270 @@
+.appointments {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.appointments .sidebar{
+    width: 31vw;
+    height: 100vh;
+    background-color: var(--white);
+    justify-self: flex-end;
+}
+.appointments .sidebar .content{
+    padding-left: 3vw;
+}
+.appointments .indicators{
+    display: flex;
+    margin-top: 10px;
+}
+.appointments .indicator{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.appointments .indicator .image{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.appointments .indicator .image svg{
+    margin-left: 5px;
+    fill: var(--blue);
+}
+.appointments .indicator .text{
+    font-size: 1.6em;
+    color: var(--blue);
+}
+.appointments .indicators .active{
+    background-color: var(--blue);
+}
+.appointments .indicators .active .text{
+
+    color:var(--white);
+}
+.appointments .indicators .active .image svg{
+
+    fill:var(--white);
+}
+.appointments .planner .date{
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.appointments .planner .top{
+    display: flex;
+    margin-top: 10px;
+}
+.appointments .planner .button{
+    color: var(--blue);
+    font-size: 1.4em;
+    display: flex;
+    border: 2px solid var(--blue);
+    width: fit-content;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.appointments .planner .button .image{
+    margin-right: 5px;
+}
+.appointments .planner .d{
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+
+.appointments .sidebar .plan{
+    transform: translate(0);
+}
+.appointments .plan{
+    width: calc(25vw - 20px);
+    height: 75vh;
+    overflow-y: scroll;
+    transform: translateX(-4vw);
+    z-index: 100;
+    position: absolute;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+.appointments .plan::-webkit-scrollbar {
+    width: 12px;
+    transform: translateX(10px);
+}
+
+.appointments .plan::-webkit-scrollbar-track {
+    background-color: var(--white);
+    transform: translateX(10px);
+    border-radius: 10px;
+}
+
+.appointments .plan::-webkit-scrollbar-thumb {
+    transform: translateX(10px);
+    border-radius: 10px;
+    background-color: var(--blue); 
+}
+.appointments .plan .dx-scheduler-header{
+    display: none;
+}
+.appointments .plan .g{
+    /* margin-left: 10px; */
+    right: 0;
+}
+.dx-scheduler-container{
+    background-color: transparent;
+}
+.dx-scheduler-work-space{
+    background-color: transparent;
+    border: none;
+}
+
+.dx-scheduler-time-panel-cell{
+    font-size: 1.2em;
+    font-weight: 700;
+    color:var(--alt);
+    z-index: 100;
+
+}
+.dx-scheduler-appointment{
+    background-color: white;
+    color: var(--black);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+.dx-scheduler-appointment-content{
+    padding: 0;
+}
+.appointments .plan .ac h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appointments .plan .ac p{
+    font-size: 1em;
+}
+.appointments .plan .ac span{
+    font-weight: 600;
+}
+.dx-overlay{
+    display: none;
+}
+.dx-overlay-wrapper ,.dx-scheduler-overlay-panel, .dx-overlay-shader{
+    display: none;
+}
+::ng-deep .dx-scheduler-date-table-cell.dx-state-focused {
+    background-color: transparent;
+}
+
+::ng-deep .dx-scheduler-date-table-cell.dx-scheduler-focused-cell {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+::ng-deep .dx-scheduler-date-table-cell.dx-state-hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+::ng-deep .dx-scheduler-date-table-cell.dx-state-hover.dx-state-focused {
+    background-color: transparent;
+}
+
+::ng-deep .dx-scheduler-date-table-cell.dx-state-active {
+    background-color: transparent;
+}
+.dx-scheduler-work-space-day.dx-scheduler-work-space-odd-cells .dx-scheduler-time-panel-row:nth-child(2n) .dx-scheduler-time-panel-cell::after, .dx-scheduler-work-space-week.dx-scheduler-work-space-odd-cells .dx-scheduler-time-panel-row:nth-child(2n) .dx-scheduler-time-panel-cell::after, .dx-scheduler-work-space-work-week.dx-scheduler-work-space-odd-cells .dx-scheduler-time-panel-row:nth-child(2n) .dx-scheduler-time-panel-cell::after{
+    display: none;
+}
+.dx-scheduler-work-space-day.dx-scheduler-work-space-odd-cells .dx-scheduler-date-table-row:nth-child(odd) .dx-scheduler-date-table-cell, .dx-scheduler-work-space-week.dx-scheduler-work-space-odd-cells .dx-scheduler-date-table-row:nth-child(odd) .dx-scheduler-date-table-cell, .dx-scheduler-work-space-work-week.dx-scheduler-work-space-odd-cells .dx-scheduler-date-table-row:nth-child(odd) .dx-scheduler-date-table-cell{
+    border-top: 4px solid #535461;
+}
+
+
+.appointments .appdet .killme h2{
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.appointments .appdet .killme h1{
+    font-weight: 600;
+    font-size: 2.2em;
+}
+.appointments .appdet .killme h3{
+    font-weight: 600;
+    font-size: 2em;
+}
+.appointments .appdet .killme .box{
+    box-shadow: 0px 4px 27px -6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    width: fit-content;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+.appointments .appdet .killme .l{
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 5px;
+    color: var(--alt);
+}
+.appointments .appdet .killme .al{
+    font-weight: 500;
+}
+.appointments .cont{
+    display: flex;
+}
+.appointments .planr{
+    position: absolute;
+    transform: translateX(25vw);
+}
+.appointments .planr .ac {
+    padding: 10px;
+    padding-bottom: 40px;
+    width: 313px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 2px solid var(--red);
+}
+.appointments .planr .ac h1{
+    font-size: 1.75em;
+}
+.appointments .planr .ac #red{
+    font-weight: 600;
+}
+.appointments .planr .ac p{
+    font-size: 0.90em;
+}
+.appointments .asdasd{
+    background-color: var(--red);
+    color:var(--white);
+    padding: 8px;
+    height: 20px;
+    width: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    border-radius: 20px;
+    transform: translateY(-5px);
+}

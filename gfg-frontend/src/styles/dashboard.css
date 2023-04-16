@@ -1,0 +1,106 @@
+.dashboard {
+    height: 100vw;
+    width:100%;
+}
+.dashboard .greeting{
+    background-color: var(--white);
+    padding: 50px;
+    padding-top: 70px;
+    border-radius: 71px;
+    box-shadow: 0px 8px 54px -24px rgba(0, 0, 0, 0.25);
+    margin-top: 7vh;
+    display: flex;
+    width: 85%;
+}
+.dashboard .greeting .image{
+    position: absolute;
+    right:8vw;
+    transform: translateY(-36%);
+}
+.dashboard .greeting h1{
+    font-weight: 500;
+    font-size: 3.125em;
+    margin-bottom: 40px;
+}
+.dashboard .greeting p{
+    font-weight: 400;
+    font-size: 2.3em;
+    margin-bottom: 5vh;
+}
+.dashboard .content{
+    display: flex;
+    flex: 3 4;
+}
+.dashboard .weekly{
+    flex-basis: 3;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard .apps{
+    flex-basis: 4;
+}
+.dashboard .content h2{
+    font-weight: 400;
+    font-size: 2.3em;
+    margin-top: 5vh;;
+    margin-bottom: 40px;
+}
+
+.weekly .card{
+    background-color: var(--white);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding:20px;
+    box-shadow: 0px 4px 17px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-right: 30px;
+    width: 110px;;
+}
+.weekly .cards{
+    display: flex;
+}
+.weekly .card .title{
+    color: var(--alt);
+}
+.weekly .card .data{
+    border-radius: 15px;
+    background-color: var(--blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-left: 20px solid var(--blue);
+    border-right: 20px solid var(--blue);
+    transform: translateY(33%);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.weekly .data2{
+    border-radius: 15px;
+    background-color: var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-left: 20px solid var(--white);
+    border-right: 20px solid var(--white);
+    transform: translateY(33%);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.ap .table1{
+    transform: translateY(-30px);
+    height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.ap .table1 table{
+    width: 45vw;
+
+}

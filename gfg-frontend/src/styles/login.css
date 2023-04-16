@@ -1,0 +1,98 @@
+.login{
+    overflow: hidden;
+}
+.login .box{
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.login .box2{
+    background-color: var(--white);
+    height: 25vw;
+    width: 25vw;
+    transform: translateX(185px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login .box2 h1{
+    font-size: 2.5em;
+    color: var(--blue);
+    margin-bottom: 40px;
+}
+.login .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 .logo {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    transform: scale(1.3);
+  }
+  .box2 .h{
+    font-weight: 400;
+    color: white;
+    font-size: 1.8em;
+  }
+  .box2 input{
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 1.3em;
+    padding-left: 5px;
+    font-weight: 400;
+  }
+  .box2 input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+  .box2 .ic{
+    height: 30px;
+    z-index: 5;
+  }
+  .box2 .field{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    height: 30px;
+    max-width: fit-content;
+    border: solid var(--blue) 1px;
+    border-radius: 50px;
+    margin-top: 30px;
+    z-index: 10;
+    
+  }
+  .login .box2 button{
+    background: none;
+    border: none;
+    height: 30px;
+    width: fit-content;
+    line-height: 30px;
+    cursor: pointer;
+    color:var(--blue);
+    font-weight: 400;
+    font-size: 1.4em;
+    border-radius: 30px;
+  }
+  .login .box2 .button{
+    display: flex;
+    height: 30px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    align-self: center;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid var(--blue) 1px;
+  }

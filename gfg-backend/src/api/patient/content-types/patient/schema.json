@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "Patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "DOB": {
+      "type": "date",
+      "required": true
+    },
+    "Documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "UUID": {
+      "type": "uid",
+      "required": true
+    },
+    "appointments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::appointment.appointment",
+      "mappedBy": "patient"
+    },
+    "note": {
+      "type": "richtext"
+    }
+  }
+}

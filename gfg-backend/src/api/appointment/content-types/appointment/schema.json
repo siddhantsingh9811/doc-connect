@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "singularName": "appointment",
+    "pluralName": "appointments",
+    "displayName": "Appointment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "time",
+      "required": true
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "appointments"
+    },
+    "date": {
+      "type": "date"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "userconf": {
+      "type": "boolean",
+      "default": true
+    },
+    "duration": {
+      "type": "decimal",
+      "default": 1
+    },
+    "note": {
+      "type": "richtext"
+    }
+  }
+}

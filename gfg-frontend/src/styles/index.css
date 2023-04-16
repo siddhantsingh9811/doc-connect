@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  border: 0;
+  padding:0;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  background-color: var(--bg);
+}
+.main{
+    height: 100vw;
+    width:calc(100vw - 395px);
+    padding-left: 5vw;
+
+}
+.pagetitle{
+    font-weight: 600!important;
+    color:var(--blue);
+    font-size: 2.75em!important;
+    margin-top: 35px;
+}
+.table1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.table1 table{
+    border: none;
+    border-spacing: 0 1em;
+    padding-right: 20px;
+    
+}
+.table1 th{
+    font-weight: 600;
+    color: var(--alt);
+}
+.table1 tr{
+    width: 100%;
+}
+.table1 .t1d td:first-child{
+    border-radius: 20px 0 0 20px;
+}
+.table1 .t1d td:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.table1 .t1d td{
+    background-color: var(--white);
+    padding: 30px;
+    font-weight: 600;
+    box-shadow: 0px 10px 72px -34px rgba(0, 0, 0, 0.25);
+    transform: translateY(-30px);
+    z-index: 10;
+}
+.t1h th{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding-bottom: 30px;
+    background-color: var(--bg);
+    height: 100%;
+}
+.table1::-webkit-scrollbar {
+    width: 12px;
+    transform: translateX(10px);
+}
+
+.table1::-webkit-scrollbar-track {
+    background-color: var(--white);
+    transform: translateX(10px);
+    border-radius: 10px;
+}
+
+.table1::-webkit-scrollbar-thumb {
+    transform: translateX(10px);
+    border-radius: 10px;
+    background-color: var(--blue); 
+}
+.note .bx{
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin-right: 40px;
+
+}
+.note .bx p{
+    font-size: 1em;
+    font-weight: 400;
+}
+.note .bx h1{
+    font-size: 1.625em;
+    font-weight: 500;
+}
+.note .h{
+    font-size: 2.25em!important;
+    font-weight: 300!important;
+}
+#blue{
+    color: var(--blue);
+}
+#black{
+    color: var(--black);
+}
+#red{
+    color: var(--red);
+}
+:root{
+  --bg:#F2F2F2;
+  --blue:#0092FC;
+  --white:#ffffff;
+  --black:#000000;
+  --green:#3ECD57;
+  --red:#FD4242;
+  --alt:#535461;
+}
+
+.main img{
+    width: inherit;
+}
+.plugins{
+    height: 100vw;
+    width:100%;
+}
+.datasets{
+    height: 100vw;
+    width:100%;
+}
+.forum{
+    height: 100vw;
+    width:100%;
+}
