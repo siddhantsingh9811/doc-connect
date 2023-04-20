@@ -1,5 +1,4 @@
-# Doc Connect
-This is a project made for the Solving for India hackathon organized by Geeks for Geeks  
+# Doc Connect 
 ## Technical Details
 The project was designed from scratch using figma - https://www.figma.com/file/aZYB1VBNW9iPLMBiu4HW4f/Untitled?node-id=41%3A1174&t=d0940pwBSMx7RVbN-1  
 The backend makes use of a headless CMS called strapi this was done to ensure that the project is easy to modify and self host, it has been deployed to a google cloud AMD instance using a docker image and nginx  
