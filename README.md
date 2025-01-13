@@ -1,6 +1,10 @@
 # Doc Connect 
 DocConnect is an all-in-one application designed specifically for doctors, providing them with the tools and features they need to manage their patients, appointments, and documents in a seamless and efficient manner. With its patient and appointment management system, doctors can easily schedule and manage their appointments with ease, helping to streamline their workflow and save time.  
 
+# Preview
+![Home](Assets/Home.png)
+![Appointments](Assets/AP1.png)
+![Appointments](Assets/AP2.png)
 ## Technical Details
 The backend makes use of a headless CMS called strapi this was done to ensure that the project is easy to modify and self host, it was deployed to a google cloud AMD instance using a docker image and nginx  
 The frontend is coded in React and it is a Progressive Web Application so it can also be downloaded as a desktop application.  
